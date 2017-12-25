@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring.profiles: dev
+person: 
+  name: "zhangsan"
+  age: 21
+  
+com.yue.springboot.configuration: 
+  value: ${random.value}
+  number: ${random.int}
+  bignumber: ${random.long}
+  uuid: ${random.uuid}
+  lessThanTen: ${random.int(10)} 
+  range: ${random.int[10,20]}
+  servers: 
+    - dev.yue.com
+    - pro.yue.com
+  students:
+    zhangsan: 123
+    lisi: 456
+
+--- 
+spring.profiles: product
+server:
+  port: 8082
