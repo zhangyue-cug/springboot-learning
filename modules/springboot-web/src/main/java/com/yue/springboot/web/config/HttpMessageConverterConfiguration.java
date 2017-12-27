@@ -3,6 +3,7 @@ package com.yue.springboot.web.config;
 import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.converter.HttpMessageConverter;
 
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
@@ -14,6 +15,7 @@ import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
  * @since 2017-12-25 14:51:46
  */
 @Configuration
+@Profile("dev")
 public class HttpMessageConverterConfiguration {
 
 	@Bean

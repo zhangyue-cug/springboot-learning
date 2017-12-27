@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @Description: springboot web项目
  * <pre>
- * 	1、自定义 HttpMessageConverter
+ * 	1、自定义 HttpMessageConverter(fastjson)
+ *  2、自定义序列化,springboot默认支持Jackson(@JsonComponent)序列化
  * </pre>
  * 
  * @author zhangyue

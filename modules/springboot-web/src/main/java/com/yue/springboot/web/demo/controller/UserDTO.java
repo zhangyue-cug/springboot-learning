@@ -2,7 +2,7 @@ package com.yue.springboot.web.demo.controller;
 
 import java.util.Date;
 
-import com.alibaba.fastjson.annotation.JSONField;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 /**
  * @Description: 用户DTO
@@ -18,7 +18,7 @@ public class UserDTO {
 	
 	private String password;
 	
-	@JSONField(format = "yyyy-MM-dd HH:mm:ss")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date createTime;
 
 	public Long getId() {
@@ -45,6 +45,7 @@ public class UserDTO {
 		this.password = password;
 	}
 
+	// @JsonSerialize(using = CustomDateSerializer.class) 
 	public Date getCreateTime() {
 		return createTime;
 	}
