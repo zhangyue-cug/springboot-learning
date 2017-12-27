@@ -1,6 +1,7 @@
 package com.yue.springboot.web.serialize;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -26,8 +27,9 @@ public class CustomJsonDateSerializer {
 		@Override
 		public void serialize(Date value, JsonGenerator gen, SerializerProvider serializers)
 				throws IOException, JsonProcessingException {
-			
-			System.out.println("====================serialize========================");	
+			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			String formattedDate = formatter.format(value);
+			gen.writeString(formattedDate);
 		}
 		
     }
