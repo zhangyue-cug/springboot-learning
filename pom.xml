@@ -25,6 +25,7 @@
 		<module>modules/springboot-quickstart</module>
 		<module>modules/springboot-configuration</module>
 		<module>modules/springboot-web</module>
+		<module>modules/springboot-web-freemarker</module>
 	</modules>
 
 	<!--组件的父模块配置，在这里总体配置公共外部版本依赖，以便于将来的移植与维护 -->
