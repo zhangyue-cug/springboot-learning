@@ -18,11 +18,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class WebApplicationTest {
 	
 	/** 日志 */
-    protected static Logger LOGGER = LoggerFactory.getLogger(WebApplicationTest.class);
+    protected static Logger logger = LoggerFactory.getLogger(WebApplicationTest.class);
     
     @Test
     public void test() {
-    	LOGGER.info("=========测试环境构建完毕========");
+    	logger.info("=========测试环境构建完毕========");
     }
     
 }
