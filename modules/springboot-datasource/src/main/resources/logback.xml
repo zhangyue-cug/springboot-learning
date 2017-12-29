@@ -9,7 +9,7 @@
             <level>DEBUG</level>
         </filter>
     </appender>
-    <!-- <appender name="LogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="LogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log.path}/${log.name}</File>
        <File>springboot.log</File>
         <Append>true</Append>
@@ -35,7 +35,7 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${log.path}/${log.name.error}.%d{yyyy-MM-dd}</fileNamePattern>
         </rollingPolicy>
-    </appender> -->
+    </appender>
 
 	<!--log4jdbc -->
     <logger name="jdbc.sqltiming" level="ERROR" />
