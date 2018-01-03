@@ -7,3 +7,4 @@ springboot学习
 5、springboot-datasource 配置数据源
 6、springboot-jdbc 使用jdbc方式操作数据库
 7、springboot-jpa 使用jpa方式操作数据库
+8、springboot-multi-datasource 多数据源配置（jdbc和jpa）

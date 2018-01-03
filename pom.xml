@@ -29,6 +29,7 @@
 		<module>modules/springboot-datasource</module>
 		<module>modules/springboot-jdbc</module>
 		<module>modules/springboot-jpa</module>
+		<module>modules/springboot-multi-datasource</module>
 	</modules>
 
 	<!--组件的父模块配置，在这里总体配置公共外部版本依赖，以便于将来的移植与维护 -->
