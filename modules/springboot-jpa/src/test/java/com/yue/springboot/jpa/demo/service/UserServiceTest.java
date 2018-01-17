@@ -58,7 +58,7 @@ public class UserServiceTest {
 	@Test
 	public void testAddUser() {
 		User user = new User();
-		user.setId(3L);
+		// user.setId(3L);
 		user.setName("xiaoming");
 		user.setPassword("123456");
 		User u = userRepository.save(user);

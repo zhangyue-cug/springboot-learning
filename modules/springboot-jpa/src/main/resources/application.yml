@@ -46,6 +46,8 @@ spring:
     driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     username: root
     password: mysql
+  jpa: 
+    database: mysql
 flyway: 
   enabled: true
   clean-on-validation-error: true

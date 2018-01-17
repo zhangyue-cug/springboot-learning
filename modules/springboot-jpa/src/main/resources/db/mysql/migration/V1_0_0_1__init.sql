@@ -1,5 +1,5 @@
 create table user (
-	id int(10) not null,
+	id int(10) not null AUTO_INCREMENT PRIMARY KEY,
 	name varchar(255) not null,
 	password varchar(255) not null
 );
